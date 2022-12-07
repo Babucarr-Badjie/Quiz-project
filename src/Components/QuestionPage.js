@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { questions } from "../questions";
-import Questions from "./Question";
+import Question from "./Question";
 
 const QuestionPage = ({
   score,
@@ -12,7 +12,7 @@ const QuestionPage = ({
   const [questionIndex, setQuestionIndex] = useState(0);
   return (
     <>
-      <Questions
+      <Question
         questionIndex={questionIndex}
         questions={questions}
         setQuestionIndex={setQuestionIndex}

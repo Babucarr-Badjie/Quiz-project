@@ -4,15 +4,15 @@ import "./HomePage.css";
 
 const HomePage = ({
   setShowHomePage,
-  setSowQuestionPage,
+  setShowQuestionPage,
   topScore,
   username,
   setUsername,
 }) => {
-  const startQiuz = () => {
-    if (username.trim().lenght > 0) {
+  const startQuiz = () => {
+    if (username.trim().length > 0) {
       setShowHomePage(false);
-      setSowQuestionPage(true);
+      setShowQuestionPage(true);
     }
   };
 
@@ -27,11 +27,11 @@ const HomePage = ({
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
-      <button className="start-btn" onClick={startQiuz}>
+      <button className="start-btn" onClick={startQuiz}>
         Get started
       </button>
       <p className="high-score">
-        High Score: <span>{topScore}</span>
+        Top Score: <span>{topScore}</span>
       </p>
     </Cards>
   );

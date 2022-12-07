@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "./App.css";
 import FinalPage from "./Components/FinalPage";
-// import Home from "./Components/Home";
 import QuestionPage from "./Components/QuestionPage";
 import HomePage from "./Components/HomePage";
+
+
 
 function App() {
   const [showHomePage, setShowHomePage] = useState(true);
